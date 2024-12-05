@@ -1,0 +1,24 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 90vh;
+    padding: 2rem;
+}
+
+.purchase-item {
+    border: solid 1px #b0d12a;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
