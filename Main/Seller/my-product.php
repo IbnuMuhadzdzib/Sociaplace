@@ -2,7 +2,7 @@
 session_start();
 include('../connect.php');
 
-if ($_SESSION['role'] !== 'buyer') {
+if ($_SESSION['role'] !== 'seller') {
     header('Location: index-seller.php');
     exit;
 }

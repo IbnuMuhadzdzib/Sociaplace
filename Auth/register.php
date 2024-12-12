@@ -61,7 +61,7 @@
 
         <div class="input" >
         <label for="">Register As:</label>
-            <select name="role" id="" class="role" >
+            <select name="role" class="role" >
                 <option value="Buyer">Buyer</option>
                 <option value="Seller">Seller</option>
             </select>

@@ -2,11 +2,6 @@
 session_start();
 include('connect.php');
 
-if ($_SESSION['role'] !== 'seller') {
-    header('Location: index.php');
-    exit;
-}
-
 if (!isset($_SESSION['id'])) {
     echo "<script>
             alert('Please login to view the marketplace.');

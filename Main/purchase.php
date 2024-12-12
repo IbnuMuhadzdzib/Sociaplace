@@ -2,11 +2,6 @@
 session_start();
 include('connect.php');
 
-if ($_SESSION['role'] !== 'seller') {
-    header('Location: index.php');
-    exit;
-}
-
 if (!isset($_SESSION['id'])) {
     header('Location: ../auth/login.php');
     exit;
@@ -69,7 +64,7 @@ $purchases = mysqli_fetch_all($query, MYSQLI_ASSOC);
     </div>
 
 <div class="link" id="logout" style="display: none;" >
-            <form action="auth/logout.php">
+            <form action="../auth/logout.php">
                 <button>Logout <i class="fa-solid fa-power-off"  ></i></button>
             </form>
             <button onclick="backButton()" >Back <i class="fa-solid fa-rotate-right"></i></button>
